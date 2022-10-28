@@ -27,12 +27,16 @@ public class Homepage {
         element = driver.findElement(By.id("ctl00_ContentPlaceHolderMainArea_CUVCounter1_btnGO"));
         return element;
     }
+    public WebElement getcommissionbv  (WebDriver driver){
+        element = driver.findElement(By.id("ctl00_ContentPlaceHolderMainArea_CUVCounter1_pnlCommBV"));
+        return element;
+    }
     public WebElement left   (WebDriver driver){
-        element = driver.findElement(By.id("ctl00_ContentPlaceHolderMainArea_CUVCounter1_pnlLeft2"));
+        element = driver.findElement(By.id("ctl00_ContentPlaceHolderMainArea_CUVCounter1_pnlLeft"));
         return element;
     }
     public WebElement right    (WebDriver driver){
-        element = driver.findElement(By.id("ctl00_ContentPlaceHolderMainArea_CUVCounter1_pnlRight2"));
+        element = driver.findElement(By.id("ctl00_ContentPlaceHolderMainArea_CUVCounter1_pnlRight"));
         return element;
     }
 

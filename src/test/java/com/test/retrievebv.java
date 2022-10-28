@@ -50,6 +50,8 @@ public class retrievebv {
         element.click();
         element = obj1.showbutton(driver);
         element.click();
+        WebElement bv = obj1.getcommissionbv(driver);
+        String weekbv = bv.getText();
         WebElement left = obj1.left(driver);
         String strleft = left.getText();
         WebElement right = obj1.right(driver);
@@ -57,8 +59,9 @@ public class retrievebv {
         File file = new File("D:\\output.xls");
         HSSFWorkbook wb = new HSSFWorkbook();
         HSSFSheet sh =  wb.createSheet();
-        sh.createRow(0).createCell(1).setCellValue(strleft);
-        sh.createRow(1).createCell(1).setCellValue(strright);
+        sh.createRow(1).createCell(1).setCellValue(weekbv);
+        sh.createRow(2).createCell(2).setCellValue(strleft);
+        sh.createRow(3).createCell(3).setCellValue(strright);
         try{
             FileOutputStream fos = new FileOutputStream(file);
             wb.write(fos);
