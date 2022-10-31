@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58911ec4-c4ae-42f0-9d07-59adcf7613a6" name="Changes" comment="remove compiler plugin from pom.xml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="58911ec4-c4ae-42f0-9d07-59adcf7613a6" name="Changes" comment="added  compiler plugin from pom.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667204062757</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added  compiler plugin from pom.xml">
+      <created>1667204709254</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667204709254</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,7 +264,8 @@
     <MESSAGE value="commission bv s" />
     <MESSAGE value="Chnged to qnet world site and diff user" />
     <MESSAGE value="remove compiler plugin from pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove compiler plugin from pom.xml" />
+    <MESSAGE value="added  compiler plugin from pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="added  compiler plugin from pom.xml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Sample$retrievebv_login_to_application.ic" NAME="retrievebv.login_to_application Coverage Results" MODIFIED="1666588212660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
