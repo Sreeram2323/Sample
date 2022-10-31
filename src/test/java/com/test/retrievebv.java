@@ -18,9 +18,9 @@ public class retrievebv {
     Base obj = new Base();
      public WebDriver driver ;
      public WebElement element;
-    String url = "http://www.qnetindia.co";
-    String ID = "IN096270";
-    String PWD = "Flyhigh23@";
+    String url = "https://qiportal.net";
+    String ID = "Hn485224";
+    String PWD = "1997@Moosa";
     String Browsertype = "Chrome";
     Homepage obj1 = new Homepage();
     void setupdriver(){
