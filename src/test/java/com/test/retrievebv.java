@@ -6,11 +6,17 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
+
+import java.io.DataInput;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class retrievebv {
@@ -50,18 +56,37 @@ public class retrievebv {
         element.click();
         element = obj1.showbutton(driver);
         element.click();
+
+        //get week in year
+        SimpleDateFormat dateformat = new SimpleDateFormat("dd-MM-YYYY");
+        Date date = new Date();
+        String dates = dateformat.format(date);
+        System.out.println(dates);
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        int week = cal.get(Calendar.WEEK_OF_YEAR)-1;
+        String requiredweek = Integer.toString(week);
+        System.out.println(week);
+
+        //retrieve bv of week
+        Select lastweek = new Select(obj1.getweek(driver));
+        lastweek.selectByValue(requiredweek);
+
         WebElement bv = obj1.getcommissionbv(driver);
         String weekbv = bv.getText();
         WebElement left = obj1.left(driver);
         String strleft = left.getText();
         WebElement right = obj1.right(driver);
         String strright= right.getText();
+
+       // write bv into excel
         File file = new File("C:\\Users\\WIIS\\IdeaProjects\\Sample\\output.xls");
         HSSFWorkbook wb = new HSSFWorkbook();
         HSSFSheet sh =  wb.createSheet();
-        sh.createRow(0).createCell(0).setCellValue(weekbv);
-        sh.getRow(0).createCell(1).setCellValue(strleft);
-        sh.getRow(0).createCell(2).setCellValue(strright);
+        sh.createRow(0).createCell(0).setCellValue("Week no:" + week);
+        sh.getRow(0).createCell(1).setCellValue(weekbv);
+        sh.getRow(0).createCell(2).setCellValue(strleft);
+        sh.getRow(0).createCell(3).setCellValue(strright);
         try{
             FileOutputStream fos = new FileOutputStream(file);
             wb.write(fos);

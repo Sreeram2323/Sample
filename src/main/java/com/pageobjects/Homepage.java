@@ -39,5 +39,9 @@ public class Homepage {
         element = driver.findElement(By.id("ctl00_ContentPlaceHolderMainArea_CUVCounter1_pnlRight"));
         return element;
     }
+    public WebElement getweek  (WebDriver driver){
+        element = driver.findElement(By.id("ctl00_ContentPlaceHolderMainArea_CUVCounter1_ddlWeek"));
+        return element;
+    }
 
 }

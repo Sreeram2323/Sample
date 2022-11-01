@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58911ec4-c4ae-42f0-9d07-59adcf7613a6" name="Changes" comment="jdk version to 17">
+    <list default="true" id="58911ec4-c4ae-42f0-9d07-59adcf7613a6" name="Changes" comment="printed all in 1 row in excel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pageobjects/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pageobjects/Homepage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/retrievebv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/retrievebv.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,23 +36,26 @@
     </option>
   </component>
   <component name="ProjectId" id="2GHysNaHqAhj1laflV6PNR5Bxrq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/WIIS/IdeaProjects/Sample/testng.xml&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/WIIS/IdeaProjects/Sample/testng.xml",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\WIIS\IdeaProjects\Sample\src\main\java" />
@@ -264,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667213303757</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="printed all in 1 row in excel">
+      <created>1667315572530</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667315572530</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +290,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added new print line" />
     <MESSAGE value="with maven" />
     <MESSAGE value="with maven report and testng" />
@@ -288,7 +300,8 @@
     <MESSAGE value="added  compiler plugin from pom.xml" />
     <MESSAGE value="edited maven compiler plugin version" />
     <MESSAGE value="jdk version to 17" />
-    <option name="LAST_COMMIT_MESSAGE" value="jdk version to 17" />
+    <MESSAGE value="printed all in 1 row in excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="printed all in 1 row in excel" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Sample$retrievebv_login_to_application.ic" NAME="retrievebv.login_to_application Coverage Results" MODIFIED="1666588212660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
