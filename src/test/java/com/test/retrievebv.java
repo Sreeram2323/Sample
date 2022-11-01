@@ -56,12 +56,12 @@ public class retrievebv {
         String strleft = left.getText();
         WebElement right = obj1.right(driver);
         String strright= right.getText();
-        File file = new File("D:\\output.xls");
+        File file = new File("C:\\Users\\WIIS\\IdeaProjects\\Sample\\output.xls");
         HSSFWorkbook wb = new HSSFWorkbook();
         HSSFSheet sh =  wb.createSheet();
-        sh.createRow(1).createCell(1).setCellValue(weekbv);
-        sh.createRow(2).createCell(2).setCellValue(strleft);
-        sh.createRow(3).createCell(3).setCellValue(strright);
+        sh.createRow(0).createCell(0).setCellValue(weekbv);
+        sh.getRow(0).createCell(1).setCellValue(strleft);
+        sh.getRow(0).createCell(2).setCellValue(strright);
         try{
             FileOutputStream fos = new FileOutputStream(file);
             wb.write(fos);
