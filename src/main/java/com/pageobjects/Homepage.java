@@ -43,5 +43,18 @@ public class Homepage {
         element = driver.findElement(By.id("ctl00_ContentPlaceHolderMainArea_CUVCounter1_ddlWeek"));
         return element;
     }
+    public WebElement gettc02  (WebDriver driver){
+        element = driver.findElement(By.id("ctl00_ContentPlaceHolderMainArea_CUVCounter1_ddlTC"));
+        return element;
+    }
+    public WebElement showbuttontc  (WebDriver driver){
+        element = driver.findElement(By.id("ctl00_ContentPlaceHolderMainArea_CUVCounter1_btnGO"));
+        return element;
+    }
+    public WebElement logout  (WebDriver driver){
+        element = driver.findElement(By.id("ctl00_header1_lbnSignOut"));
+        return element;
+    }
+
 
 }

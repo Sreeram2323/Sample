@@ -68,10 +68,9 @@ public class retrievebv {
         String requiredweek = Integer.toString(week);
         System.out.println(week);
 
-        //retrieve bv of week
+        //retrieve bv of week from tc01
         Select lastweek = new Select(obj1.getweek(driver));
         lastweek.selectByValue(requiredweek);
-
         WebElement bv = obj1.getcommissionbv(driver);
         String weekbv = bv.getText();
         WebElement left = obj1.left(driver);
@@ -79,19 +78,47 @@ public class retrievebv {
         WebElement right = obj1.right(driver);
         String strright= right.getText();
 
+        //retrieve bv of week from tc02
+        Select lastweektc02 = new Select(obj1.gettc02(driver));
+        lastweektc02.selectByValue("002");
+        obj1.showbuttontc(driver).click();
+        WebElement left02 = obj1.left(driver);
+        String strleft02 = left02.getText();
+        WebElement right02 = obj1.right(driver);
+        String strright02= right02.getText();
+
+        //retrieve bv of week from tc03
+        Select lastweektc03 = new Select(obj1.gettc02(driver));
+        lastweektc03.selectByValue("003");
+        obj1.showbuttontc(driver).click();
+        WebElement left03 = obj1.left(driver);
+        String strleft03 = left03.getText();
+        WebElement right03 = obj1.right(driver);
+        String strright03= right03.getText();
+
        // write bv into excel
         File file = new File("C:\\Users\\WIIS\\IdeaProjects\\Sample\\output.xls");
         HSSFWorkbook wb = new HSSFWorkbook();
         HSSFSheet sh =  wb.createSheet();
         sh.createRow(0).createCell(0).setCellValue("Week no:" + week);
         sh.getRow(0).createCell(1).setCellValue(weekbv);
-        sh.getRow(0).createCell(2).setCellValue(strleft);
-        sh.getRow(0).createCell(3).setCellValue(strright);
+        sh.getRow(0).createCell(2).setCellValue("TC001");
+        sh.getRow(0).createCell(3).setCellValue(strleft);
+        sh.getRow(0).createCell(4).setCellValue(strright);
+
+        sh.createRow(1).createCell(2).setCellValue("TC002");
+        sh.getRow(1).createCell(3).setCellValue(strleft02);
+        sh.getRow(1).createCell(4).setCellValue(strright02);
+
+        sh.createRow(2).createCell(2).setCellValue("TC003");
+        sh.getRow(2).createCell(3).setCellValue(strleft02);
+        sh.getRow(2).createCell(4).setCellValue(strright02);
         try{
             FileOutputStream fos = new FileOutputStream(file);
             wb.write(fos);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        obj1.logout(driver).click();
     }
 }
