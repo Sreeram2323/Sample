@@ -6,6 +6,7 @@
             <class name="com.test.retrievebv">
                 <methods>
                     <include name="login_to_application"/>
+
                 </methods>
             </class>
         </classes>

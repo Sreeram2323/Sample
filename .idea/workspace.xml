@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58911ec4-c4ae-42f0-9d07-59adcf7613a6" name="Changes" comment="integrated all 3 tc's">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/GoogleSheetAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pageobjects/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pageobjects/Homepage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/retrievebv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/retrievebv.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2GHysNaHqAhj1laflV6PNR5Bxrq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,7 +58,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -63,7 +67,7 @@
       <recent name="C:\Users\WIIS\IdeaProjects\Sample\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.retrievebv.login_to_application">
+  <component name="RunManager" selected="TestNG.retrievebv">
     <configuration name="Scenario: add two numbers" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/testcucumber.feature" />
@@ -80,26 +84,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="&lt;default&gt; (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Sample" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="&lt;default&gt; (3)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Sample" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,6 +146,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="retrievebv.getCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Sample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test" />
+      <option name="MAIN_CLASS_NAME" value="com.test.retrievebv" />
+      <option name="METHOD_NAME" value="getCredentials" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="retrievebv.getData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Sample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test" />
+      <option name="MAIN_CLASS_NAME" value="com.test.retrievebv" />
+      <option name="METHOD_NAME" value="getData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="retrievebv.login_to_application" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Sample" />
       <extension name="coverage">
@@ -182,18 +202,18 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Scenario: add two numbers" />
-      <item itemvalue="TestNG.&lt;default&gt; (2)" />
-      <item itemvalue="TestNG.&lt;default&gt; (3)" />
+      <item itemvalue="TestNG.retrievebv.getCredentials" />
+      <item itemvalue="TestNG.retrievebv.getData" />
       <item itemvalue="TestNG.retrievebv" />
       <item itemvalue="TestNG.retrievebv.login_to_application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.retrievebv.login_to_application" />
         <item itemvalue="TestNG.retrievebv" />
+        <item itemvalue="TestNG.retrievebv.getData" />
+        <item itemvalue="TestNG.retrievebv.getCredentials" />
+        <item itemvalue="TestNG.retrievebv.login_to_application" />
         <item itemvalue="Cucumber Java.Scenario: add two numbers" />
-        <item itemvalue="TestNG.&lt;default&gt; (3)" />
-        <item itemvalue="TestNG.&lt;default&gt; (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667317487235</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="integrated all 3 tc's">
+      <created>1667621554475</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667621554475</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
